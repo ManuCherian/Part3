@@ -25,7 +25,7 @@ namespace Assignment2.Controllers
         [HttpGet]
         public IEnumerable<MyEvent> Get()
         {
-            return db.MyEvents.OrderBy(e => e.EventId).ToList();
+            return db.MyEvents.OrderBy(e => e.EventTitle).ToList();
         }
 
         // GET api/<controller>/5
